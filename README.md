@@ -8,7 +8,7 @@ Projeto desenvolvido durante as atividades e exercícios da formação Java da *
 
 ## 🛠️ Tecnologias e Bibliotecas
 
-- **Java 17+** (utilizando recursos modernos como `record` e `java.net.http.HttpClient`)
+- **Java 21** (utilizando recursos modernos como `record` e `java.net.http.HttpClient`)
 - **[Gson](https://github.com/google/gson)** (Google Gson): Serialização e desserialização de JSON com formatação legível (*pretty printing*)
 - **[ViaCEP API](https://viacep.com.br/)**: Webservice gratuito para consulta de CEPs brasileiros
 
