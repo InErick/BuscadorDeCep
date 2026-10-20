@@ -48,7 +48,7 @@ BuscadorCEP/
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-- **Java JDK 17** ou superior instalado.
+- **Java JDK 21** ou superior instalado.
 - Biblioteca **Gson** (ex: `gson-2.14.0.jar`) adicionada ao classpath / dependências da IDE.
 
 ### Execução via IDE (IntelliJ IDEA, Eclipse ou VS Code)
