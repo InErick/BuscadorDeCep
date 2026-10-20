@@ -1,5 +1,4 @@
-import Client.ViaCepClient;
-import Service.CepService;
+import service.CepService;
 
 import java.util.Scanner;
 

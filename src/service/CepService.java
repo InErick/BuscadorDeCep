@@ -1,7 +1,7 @@
-package Service;
+package service;
 
-import Client.ViaCepClient;
-import Util.GeradorDeArquivo;
+import client.ViaCepClient;
+import util.GeradorDeArquivo;
 
 public class CepService {
     private ViaCepClient viaCepClient = new ViaCepClient();
@@ -15,8 +15,9 @@ public class CepService {
             return;
         }
         try {
-            var endereco = viaCepClient.buscar(cep);
+            var endereco = viaCepClient.buscar(cepLimpo);
             geradorDeArquivo.salvarJson(endereco);
+            System.out.println(endereco);
         } catch (Exception e) {
             System.out.println("Erro ao buscar o CEP: " + e.getMessage());
         }

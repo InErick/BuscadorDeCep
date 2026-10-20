@@ -18,7 +18,7 @@ Projeto desenvolvido durante as atividades e exercícios da formação Java da *
 
 - **Entrada via terminal**: Leitura dinâmica do CEP informado pelo usuário via `Scanner`.
 - **Validação e sanitização**: Limpeza de caracteres não numéricos (`replaceAll`) e validação de tamanho (8 dígitos).
-- **Consumo HTTP assíncrono/nativo**: Requisições HTTP com `HttpClient`, `HttpRequest` e `HttpResponse`.
+- **Consumo HTTP nativo**: Requisições HTTP com `HttpClient`, `HttpRequest` e `HttpResponse`.
 - **Mapeamento de dados**: Conversão automática do JSON da API para o record `EnderecoDTO`.
 - **Geração de arquivo JSON**: Exportação dos dados formatados para o arquivo `endereco.json`.
 - **Tratamento de exceções**: Captura e exibição amigável de erros durante a consulta ou escrita do arquivo.
@@ -30,13 +30,13 @@ Projeto desenvolvido durante as atividades e exercícios da formação Java da *
 ```text
 BuscadorCEP/
 ├── src/
-│   ├── Client/
+│   ├── client/
 │   │   └── ViaCepClient.java       # Cliente HTTP responsável pela requisição à API ViaCEP
-│   ├── DTO/
+│   ├── dto/
 │   │   └── EnderecoDTO.java        # Record Java com os campos retornados pelo ViaCEP
-│   ├── Service/
+│   ├── service/
 │   │   └── CepService.java         # Regra de negócio: validação do CEP e orquestração do fluxo
-│   ├── Util/
+│   ├── util/
 │   │   └── GeradorDeArquivo.java   # Responsável por salvar os dados em endereco.json
 │   └── Main.java                   # Classe principal e ponto de entrada da aplicação
 ├── endereco.json                   # Arquivo gerado com os dados da última consulta
@@ -87,4 +87,4 @@ BuscadorCEP/
 - Mapeamento e imutabilidade com **Java Records**.
 - Manipulação e formatação de JSON com a biblioteca **Gson**.
 - Escrita de arquivos locais usando `FileWriter`.
-- Separação de responsabilidades em camadas (`Client`, `Service`, `DTO`, `Util`).
+- Separação de responsabilidades em camadas (`client`, `service`, `dto`, `util`).

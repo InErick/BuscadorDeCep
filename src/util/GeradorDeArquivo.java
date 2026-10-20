@@ -1,6 +1,6 @@
-package Util;
+package util;
 
-import DTO.EnderecoDTO;
+import dto.EnderecoDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

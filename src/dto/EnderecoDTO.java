@@ -1,4 +1,4 @@
-package DTO;
+package dto;
 
 public record EnderecoDTO(String cep
         , String logradouro
